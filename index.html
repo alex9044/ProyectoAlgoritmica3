@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPEWEBCONF</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/leaflet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Oswald:wght@400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+   
+    <header class="site-header">
+        <div class="hero">
+
+            <div class="contenido-header">
+
+                <button type="button" class="btn btn-success">Presione aqui</button>
+
+
+                <nav class="redes-sociales">
+                    <a href="#"> <i class="fab fa-facebook"></i> </a>
+                    <a href="#"> <i class="fab fa-twitter"></i> </a>
+                    <a href="#"> <i class="fab fa-pinterest"></i> </a>
+                    <a href="#"> <i class="fab fa-youtube"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i> </a>
+                </nav>
+                
+                <div class="informacion-evento">
+                    <div class="clearfix">
+                        <p class="fecha"> <i class="far fa-calendar-alt"></i> 15-20 Nov</p>
+                        <p class="ciudad"> <i class="fas fa-map-marked-alt"></i> Ciudad del Este, PY</p>
+                    </div>
+                    <h1 class="nombre-sitio">UpeWebConf</h1>
+                    <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="barra">
+        <div class="contenedor alineacion">
+            <div class="logo">
+                <img src="img/logo.svg" alt="Logo de la UPE">
+            </div>
+            <div class="menu-movil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navegacion-principal">
+                <a href="#nuestro">Conferencia</a>
+                <a href="#precio">Calendario</a>
+                <a href="#testimonio">Invitados</a>
+                <a href="#falta">Reservaciones</a>
+            </nav>
+        </div>
+    </div>
+
+    <section class="seccion contenedor">
+        <h2>La mejor Conferencia de diseño web en español</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil, adipisci itaque? Rerum aut repellat doloremque placeat sed id laudantium. Officia, incidunt facere accusamus qui ratione alias itaque temporibus? Illo, laboriosam.</p>
+    </section>
+
+    <section class="programa">
+        
+        <div class="contenedor-video">
+            <video autoplay loop muted poster="img/bg-talleres.jpg">
+                <source src="video/video.webm" type="video/webm"><!-- video chrome -->
+                <source src="video/video.mp4" type="video/mp4"><!-- video safari -->
+                <source src="video/video.ogv" type="video/ogg"><!-- video firefox -->
+            </video>
+        </div>
+
+        <!-- comentario html -->
+        <div class="contenido-programa">
+            <div class="contenedor">
+                <div class="programa-evento">
+                    <h2>Programa del Evento</h2>
+                    
+                    <nav class="menu-programa">
+                        <a href="#talleres" class="activo"> <i class="fas fa-code"></i> Talleres </a>
+                        <a href="#seminarios" > <i class="fas fa-university"></i> Seminarios </a>
+                        <a href="#conferencias" > <i class="fas fa-comments"></i> Conferencias </a>
+                    </nav>
+
+                   <div id="talleres" class="info-curso clearfix">
+                        <div class="detalle-evento">
+                            <h3>HTML5, Css3 y JavaScript</h3>
+                            <p><i class="fas fa-clock"></i>16:00hs</p>
+                            <p><i class="fas fa-calendar"></i>15 Nov</p>
+                            <p><i class="fas fa-user"></i>Juan Pueblo</p>
+                        </div>
+                        
+                        <div class="detalle-evento">
+                            <h3>Responsive Web Design</h3>
+                            <p><i class="fas fa-clock"></i>20:00hs</p>
+                            <p><i class="fas fa-calendar"></i>15 Nov</p>
+                            <p><i class="fas fa-user"></i>Mateo Pinpinella</p>
+                        </div>
+                    </div>
+
+                    <div id="seminarios" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>Diseño UX/UI</h3>
+                            <p><i class="fas fa-clock"></i>16:00hs</p>
+                            <p><i class="fas fa-calendar">15 Nov</i></p>
+                            <p><i class="fas fa-user">Juan Pueblo</i></p>
+                        </div>
+                        
+                        <div class="detalle-evento">
+                            <h3>Aprende a Programar en una Mañana</h3>
+                            <p><i class="fas fa-clock"></i>20:00hs</p>
+                            <p><i class="fas fa-calendar">15 Nov</i></p>
+                            <p><i class="fas fa-user">Mateo Pinpinella</i></p>
+                        </div>
+                    </div>
+
+                    <div id="conferencias" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>Como Ser un Freelancer</h3>
+                            <p><i class="fas fa-clock"></i>16:00hs</p>
+                            <p><i class="fas fa-calendar">15 Nov</i></p>
+                            <p><i class="fas fa-user">Juan Pueblo</i></p>
+                        </div>
+                        <div class="detalle-evento">
+                            <h3>Tecnologías del Futuro</h3>
+                            <p><i class="fas fa-clock"></i>20:00hs</p>
+                            <p><i class="fas fa-calendar"></i>15 Nov</p>
+                            <p><i class="fas fa-user"></i>Mateo Pinpinella</p>
+                        </div>
+                    </div>
+                    <a href="#" class="button float-right">Ver Todos</a>
+                    <div class="caja"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nuestro" class="invitados contenedor seccion">
+        <h2>Nuestros invitados</h2>
+        <ul class="lista-invitados clearfix">
+            <li>
+                <div class="invitado">
+                    <img src="img/invitado1.jpg" alt="invitado1">
+                    <p>Rafael Bautista</p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="invitado">
+                    <img src="img/invitado2.jpg" alt="invitado2">
+                    <p>Adela Speratti</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="img/invitado3.jpg" alt="invitado3">
+                    <p>Jhon Trevor</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="img/invitado4.jpg" alt="invitado4">
+                    <p>Camila Soarez</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="img/invitado5.jpg" alt="invitado5">
+                    <p>Noman Galarza</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="img/invitado6.jpg" alt="invitado6">
+                    <p>Eva Montiel</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- efecto parallax-->
+    <div class="contador parallax">
+        <div class="contenedor">
+            <ul class="resumen-evento clearfix">
+                
+                <li><p class="numero" id="num1"> 0 </p> invitados </li>
+                <li><p class="numero" id="num2"> 0 </p> Talleres </li>
+                <li><p class="numero" id="num3"> 0 </p> Dias </li>
+                <li><p class="numero" id="num4"> 0 </p> Conferencias </li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="precio" class="precios seccion">
+        <h2>precios</h2>
+        <div class="contenedor">
+            <ul class="lista-precios clearfix">
+                <li>
+                    <div class="tabla-precio">
+                        <h3>pase por dia</h3>
+                        <p class="numero">$30</p>
+                        <ul>
+                            <li>Bocadillos Gratis</li>
+                            <li>Todas las Conferencias</li>
+                            <li>Todos los talleres</li>
+                        </ul>
+                        <a href="#" class="button hollow">comprar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="tabla-precio">
+                        <h3>Todos los dias</h3>
+                        <p class="numero">$50</p>
+                        <ul>
+                            <li>Bocadillos Gratis</li>
+                            <li>Todas las Conferencias</li>
+                            <li>Todos los talleres</li>
+                        </ul>
+                        <a href="#" class="button hollow">comprar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="tabla-precio">
+                        <h3>pase por 2 dias</h3>
+                        <p class="numero">$45</p>
+                        <ul>
+                            <li>Bocadillos Gratis</li>
+                            <li>Todas las Conferencias</li>
+                            <li>Todos los talleres</li>
+                        </ul>
+                        <a href="#" class="button hollow">comprar</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <div id="mapa" class="mapa">
+        
+    </div>
+
+
+    <div class="card contenedor" style="width: 18rem;">
+        <img src="img/testimonial.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+
+    <section id="testimonio" class="seccion">
+        <h2>Testimonios</h2>
+        <div class="testimoniales contenedor clearfix">
+            <div class="testimonial">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vitae enim corporis voluptatum, illo officiis obcaecati, sunt libero minus quisquam amet, dignissimos iste qui quia cum hic ipsa error ex!</p>
+                    <footer class="info-testimonial">
+                        <img src="img/testimonial.jpg">
+                        <cite>Oswaldo Aponte Monzon <span>Diseñador en GII</span></cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vitae enim corporis voluptatum, illo officiis obcaecati, sunt libero minus quisquam amet, dignissimos iste qui quia cum hic ipsa error ex!</p>
+                    <footer class="info-testimonial">
+                        <img src="img/testimonial.jpg">
+                        <cite>Oswaldo Aponte Monzon <span>Diseñador en GII</span></cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <div class="testimonial">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero vitae enim corporis voluptatum, illo officiis obcaecati, sunt libero minus quisquam amet, dignissimos iste qui quia cum hic ipsa error ex!</p>
+                    <footer class="info-testimonial">
+                        <img src="img/testimonial.jpg">
+                        <cite>Oswaldo Aponte Monzon <span>Diseñador en GII</span></cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <div class="newsletter parallax">
+        <div class="contenido contenedor">
+            <p>Registrate al newsletter:</p>
+            <h3>UpeWebConf</h3>
+            <a href="#" class="button transparente">Registro</a>
+        </div>
+    </div>
+
+    <setion id="falta" class="seccion">
+        <h2>faltan</h2>
+        <div class="cuenta-regresiva contenedor">
+            <ul class="clearfix">
+                <li><p class="numero" id="dias"> 0</p>Dias</li>
+                <li><p class="numero" id="horas"> 0</p>Horas</li>
+                <li><p class="numero" id="minutos"> 0</p>Minutos</li>
+                <li><p class="numero" id="segundos"> 0</p>Segundos</li>
+            </ul>
+        </div>
+    </setion>
+
+    <footer class="sitio-footer">
+        <div class="contenedor clearfix">
+            <div class="footer-informacion">
+                <h3>Sobre <span>UPEWEBCONF</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magni quo quisquam cumque quasi voluptate commodi eius error repellendus aperiam adipisci velit eum soluta, quos eaque quia reprehenderit omnis! Ipsa?</p>
+            </div>
+            
+            <div class="ultimos-tweets">
+                <h3>Ultimos <span>Tweets</span></h3>
+                <ul>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <h3>Redes <span>Sociales</span></h3>
+                <nav class="redes-sociales">
+                    <a href="http://facebook.com" target="_blank"> <i class="fab fa-facebook"></i> </a>
+                    <a href="http://twitter.com"> <i class="fab fa-twitter"></i> </a>
+                    <a href="http://pinterest.com"> <i class="fab fa-pinterest"></i> </a>
+                    <a href="http://youtube.com"> <i class="fab fa-youtube"></i></a>
+                    <a href="http://instagram.com"> <i class="fab fa-instagram"></i> </a>
+                </nav>
+            </div>
+        </div>
+
+        <p class="copyright">Todos los derechos Reservados UPEWEBCONF 2020. <br>
+        <marquee>powered by ..::Carlos Colman::..</marquee></p>
+
+       
+
+
+    </footer>
+
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/jquery.animateNumber.js"></script>
+    <script src="js/jquery.countdown.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+    <script src="js/principal.js"></script>
+</body>
+</html>
